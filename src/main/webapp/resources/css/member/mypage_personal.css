@@ -1,0 +1,231 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    cursor:  default; 
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+li {
+    list-style: none;
+}
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+img {
+    border: 0;
+    max-width: 100%;
+}
+
+/* 헤더메뉴 */
+#header{
+    padding: 8px; 
+    margin:auto;
+    display: flex;
+    box-sizing: border-box;
+    width: 1024px;
+}
+.header_menu{
+    display:flex;
+    justify-content: flex-end;
+    width: 100%;
+    cursor: pointer;
+}
+.header_menu_item{
+    display:flex;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 15px;
+}
+.header_menu_item1{
+    display:flex;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-left: #000000 1px solid;
+    border-right: #000000 1px solid;
+    font-size: 15px;
+}
+.header_menu_item2{
+    display:flex;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-left: #000000 1px solid;
+    border-right: #000000 1px solid;
+    font-size: 15px;
+}
+
+/* 신선해 로고 */
+.header_logo{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+/* 메뉴 */
+#navbar{
+    width: 1024px;
+    top: 110px;
+    height: 50px;
+    margin: auto;
+}
+.navbar_menu{
+    height: 100%;
+    width:1024px;
+    display: flex;
+    margin: 0;
+    text-align: center;
+}
+.navbar_menu_item{
+    height: 100%;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #797777;
+    font-size: 17px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+}
+.navbar_menu_item:hover{
+    color: rgb(93, 168, 118);
+    border-bottom: rgb(93, 168, 118) 3px solid;
+}
+
+/* 검색 */
+.search{
+    position: relative;
+}
+.search_text{
+    width: 242px;
+    height: 36px;
+    padding: 0 60px 0 14px;
+    border: 1px solid #f7f7f6;
+    border-radius: 18px;
+    background-color: #f7f7f7;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 12px;
+    color: #666;
+    line-height: 16px;
+    outline: none;
+}
+.btn_search{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: 20px;
+    height: 20px;
+    appearance: initial;
+    background-color: initial;
+    cursor: pointer;
+    border: initial;
+}  
+.head{
+    height: 100%; 
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 3px;                        
+    text-align: center;
+    background-color: #cddc39;     
+    color: #797777;
+    font-size: 20px;
+}
+
+.container{
+    margin: auto;
+    width: 1024px;
+}
+.my_menu{
+    float: left;
+    border: slategrey solid 1px;
+    margin: auto 20px;
+    width: 25%;
+}
+
+.my_shop{
+    margin: 20px 20px; 
+    padding: 5px;
+}
+
+.myshopping{
+    margin: 100px 0;
+    padding: 5px;
+}
+
+.my_activity{
+    margin: 20px 20px; 
+    padding: 5px;
+    border-top: #797777 solid;
+}
+.myactivity{
+    margin: 100px 0;
+    padding: 5px;
+}
+
+.my_info{
+    margin: 20px 20px; 
+    padding: 5px;
+    border-top: #797777 solid; 
+}
+
+.myinfo{
+    margin: 100px 0;
+    padding: 5px;;
+}
+
+
+.personal_tab{
+    border: #797777 solid;
+    width: 70%;
+    height: 250px;
+    border-collapse: collapse;
+}
+
+.pt_name{
+    border: #797777 solid;
+}
+
+.pt_name_input{
+    width: 60%;
+    height: 30px;
+}
+
+.pt_email{
+    border: #797777 solid;
+}
+
+.pt_email_input{
+    width: 60%;
+    height: 30px;
+}
+
+.pt_num{
+    border: #797777 solid;
+}
+
+.pt_num_input{
+    width: 60%;
+    height: 30px;
+}
+
+.pt_sms{
+    border: #797777 solid;
+}
+
+.pt_sms_input{
+    width: 60%;
+    height: 30px;
+}

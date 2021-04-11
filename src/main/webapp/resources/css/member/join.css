@@ -1,0 +1,354 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    cursor:  default; 
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+li {
+    list-style: none;
+}
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+img {
+    border: 0;
+    max-width: 100%;
+}
+
+/* 헤더메뉴 */
+#header{
+    padding: 8px; 
+    margin:auto;
+    display: flex;
+    box-sizing: border-box;
+    width: 1024px;
+}
+.header_menu{
+    display:flex;
+    justify-content: flex-end;
+    width: 100%;
+    cursor: pointer;
+}
+.header_menu_item{
+    display:flex;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 15px;
+}
+.header_menu_item1{
+    display:flex;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-left: #000000 1px solid;
+    border-right: #000000 1px solid;
+    font-size: 15px;
+}
+.header_menu_item2{
+    display:flex;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-left: #000000 1px solid;
+    border-right: #000000 1px solid;
+    font-size: 15px;
+}
+
+/* 신선해 로고 */
+.header_logo{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+/* 메뉴 */
+#navbar{
+    width: 1024px;
+    top: 110px;
+    height: 50px;
+    margin: auto;
+}
+.navbar_menu{
+    height: 100%;
+    width:1024px;
+    display: flex;
+    margin: 0;
+    text-align: center;
+}
+.navbar_menu_item{
+    height: 100%;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #797777;
+    font-size: 17px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+}
+.navbar_menu_item:hover{
+    color: rgb(93, 168, 118);
+    border-bottom: rgb(93, 168, 118) 3px solid;
+}
+
+/* 검색 */
+.search{
+    position: relative;
+}
+.search_text{
+    width: 242px;
+    height: 36px;
+    padding: 0 60px 0 14px;
+    border: 1px solid #f7f7f6;
+    border-radius: 18px;
+    background-color: #f7f7f7;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 12px;
+    color: #666;
+    line-height: 16px;
+    outline: none;
+}
+.btn_search{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: 20px;
+    height: 20px;
+    appearance: initial;
+    background-color: initial;
+    cursor: pointer;
+    border: initial;
+}  
+/* 회원가입 내용 */
+.head{
+    width: 100%;   
+    margin-bottom: 50px;
+    padding: 3px;                        
+    text-align: center;
+    border: #c7c6c6 solid 1px;    
+    color: #797777;
+    font-size: 20px;  
+}
+
+
+.input{
+    margin: auto;
+    display: flex;        
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.input_id{
+    margin: 5px auto;
+}
+
+.id_input{
+    padding: 0px;
+    margin: 5px auto;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border: #c7c6c6 solid 1px;
+}
+/* 중복아이디 존재하지 않는경우 */ 
+.id_input_re_1{ 
+   color : green; 
+   display : none; 
+} 
+/* 중복아이디 존재하는 경우 */ 
+.id_input_re_2{ 
+   color : red; 
+   display : none; 
+}
+
+.input_pw{
+    margin: 5px auto;
+    
+}
+
+.pw1_input{
+    padding: 0px;
+    margin: 5px auto;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border: #c7c6c6 solid 1px;
+}
+
+.check_pw{
+    margin: 5px auto;
+}
+
+.pw2_input{
+    padding: 0px;
+    margin: 5px auto;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border: #c7c6c6 solid 1px;
+}
+
+.cus_name{
+    margin: 5px auto;
+}
+
+.name_input{
+    padding: 0px;
+    margin: 5px auto;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border: #c7c6c6 solid 1px;
+}
+
+.phone_num{
+    margin: 5px auto;
+}
+
+.tel_input{
+    padding: 0px;
+    margin: 5px auto;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border: #c7c6c6 solid 1px;
+}
+
+.cus_address{
+    margin: 5px auto;
+    }
+
+#sample6_postcode{
+    padding: 0px;
+    margin: 5px auto;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    border: #c7c6c6 solid 1px;
+}
+
+#zip_code{
+    background-color: #e7e5e5;
+    padding: 5px;
+    margin: 5px auto;
+    height: 34px;    
+    border-radius: 5px;
+    border: #c7c6c6 solid 1px;
+}
+
+#sample6_address{
+    padding: 0px;
+    margin: 5px auto;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border: #c7c6c6 solid 1px;
+}
+
+#sample6_detailAddress{
+    padding: 0px;
+    margin: 5px auto;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border: #c7c6c6 solid 1px;
+}
+
+#sample6_extraAddress{
+    padding: 0px;
+    margin: 5px auto;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border: #c7c6c6 solid 1px;
+}
+
+.cus_email{
+    margin: 5px auto;
+}
+
+.email_input{
+    padding: 0px;
+    margin: 5px auto;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border: #c7c6c6 solid 1px;
+}
+
+.joinbtn{
+    margin: 5px auto;
+}
+
+.join_btn{
+    padding: 0px;
+    margin: 10px auto;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    border: #c7c6c6 solid 1px;
+    background-color: #e7e5e5;
+}
+
+/* 유효성 검사 문구 */
+.final_id_ck{
+    display: none;
+}
+.final_pw1_ck{
+    display: none;
+}
+.final_pw2_ck{
+    display: none;
+}
+.final_name_ck{
+    display: none;
+}
+.final_tel_ck{
+    display: none;
+}
+.final_addr_ck{
+    display: none;
+}
+.final_email_ck{
+    display: none;
+}
+
+/* 비밀번호 확인 일치 유효성검사 */
+.pwck_input_re_1{
+        color : green;
+        display : none;    
+}
+.pwck_input_re_2{
+        color : red;
+        display : none;    
+}
+
+.Easy_join{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+ul.easybtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 5px;
+} 
